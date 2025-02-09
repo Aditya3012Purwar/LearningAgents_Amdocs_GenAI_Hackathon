@@ -1,7 +1,7 @@
 import React from "react"
 import { useState } from "react"
 import axios from "axios"
-import "RoadMapGenerator.css"
+import "./RoadMapGenerator.css"
 
 function RoadmapGenerator() {
   const [formData, setFormData] = useState({
