@@ -69,7 +69,7 @@ def generate_roadmap(skill: str, experience: str, time_duration: str, purpose: s
         roadmap_with_links += week + "\n\n"
         if "week" in week.lower():  
             topic = week.split(":")[0].strip()
-            youtube_links = fetch_youtube_links(topic)
+            youtube_links = fetch_youtube_links(topics)
             roadmap_with_links += f"### YouTube Tutorials for {topic}:\n{youtube_links}\n\n"
     
     logger.info("Roadmap generation completed successfully.")
