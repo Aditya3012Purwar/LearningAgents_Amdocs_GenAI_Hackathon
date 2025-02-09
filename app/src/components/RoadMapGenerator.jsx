@@ -29,7 +29,7 @@ function RoadmapGenerator() {
     setRoadmap("")
 
     try {
-      const response = await axios.post("http://127.0.0.1:8000/generate-roadmap", formData)
+      const response = await axios.post("https://test-wjqk.onrender.com/generate-roadmap", formData)
       setRoadmap(response.data.roadmap)
     } catch (err) {
       setError("An error occurred while generating the roadmap. Please try again.")
